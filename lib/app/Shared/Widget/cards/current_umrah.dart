@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:twaf/app/Shared/Colors/Colors.dart';
 import 'package:twaf/app/Shared/Style/Text_Style.dart';
+import 'package:twaf/app/Shared/constants.dart';
 import 'package:twaf/app/routes/app_pages.dart';
 
 class CurrentUmrahCard extends StatelessWidget {
@@ -15,6 +16,7 @@ class CurrentUmrahCard extends StatelessWidget {
       alignment: Alignment.centerLeft,
       children: [
         Container(
+          width: widthApp ,margin: EdgeInsetsDirectional.only(end: widthApp * 0.12),
           decoration: BoxDecoration(
             color: kcardgray,
             borderRadius: BorderRadius.circular(10),
@@ -112,21 +114,24 @@ class CurrentUmrahCard extends StatelessWidget {
             ],
           ),
         ),
-        Container(
-          alignment: FractionalOffset(-0.1, 0),
-          width: Get.width,
-          height: 50,
-          child: GestureDetector(
-            onTap: () {Get.toNamed(Routes.CURRENT_UMRAH);},
-            child: const CircleAvatar(
-              backgroundColor: Color(0XFFECECEC),
-              radius: 30,
-              child: CircleAvatar(
-                backgroundColor: kcardgray,
-                radius: 24,
-                child: Icon(
-                  Icons.arrow_forward_ios,
-                  color: kgoldColor,
+        PositionedDirectional(
+          start: widthApp * 0.8,
+          child: Container(
+            alignment: FractionalOffset(-0.1, 0),
+            child: GestureDetector(
+              onTap: () {
+                Get.toNamed(Routes.CURRENT_UMRAH);
+              },
+              child: const CircleAvatar(
+                backgroundColor: Color(0XFFECECEC),
+                radius: 28,
+                child: CircleAvatar(
+                  backgroundColor: kcardgray,
+                  radius: 26,
+                  child: Icon(
+                    Icons.arrow_forward_ios,
+                    color: kgoldColor,
+                  ),
                 ),
               ),
             ),

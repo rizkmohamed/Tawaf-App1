@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import 'package:twaf/app/Shared/Colors/Colors.dart';
 import 'package:twaf/app/Shared/Style/Text_Style.dart';
 
+import '../../constants.dart';
+
 class LastUmrahCard extends StatelessWidget {
   const LastUmrahCard({
     Key? key,
@@ -14,6 +16,8 @@ class LastUmrahCard extends StatelessWidget {
       alignment: Alignment.centerLeft,
       children: [
         Container(
+          width: widthApp,
+          margin: EdgeInsetsDirectional.only(end: widthApp * 0.12),
           decoration: BoxDecoration(
             color: kcardgray,
             borderRadius: BorderRadius.circular(10),
@@ -149,21 +153,23 @@ class LastUmrahCard extends StatelessWidget {
             ],
           ),
         ),
-        Container(
-          alignment: FractionalOffset(-0.1, 0),
-          width: Get.width,
-          height: 50,
-          child: GestureDetector(
-            onTap: () {},
-            child: const CircleAvatar(
-              backgroundColor: Color(0XFFD8D8D8),
-              radius: 30,
-              child: CircleAvatar(
-                backgroundColor: kcardgray,
-                radius: 24,
-                child: Icon(
-                  Icons.arrow_forward_ios,
-                  color: kgary,
+        PositionedDirectional( start: widthApp * 0.8,
+          child: Container(
+            alignment: FractionalOffset(-0.1, 0),
+            // width: Get.width,
+            // height: 50,
+            child: GestureDetector(
+              onTap: () {},
+              child: const CircleAvatar(
+                backgroundColor: Color(0XFFD8D8D8),
+                radius: 28,
+                child: CircleAvatar(
+                  backgroundColor: kcardgray,
+                  radius: 26,
+                  child: Icon(
+                    Icons.arrow_forward_ios,
+                    color: kgary,
+                  ),
                 ),
               ),
             ),

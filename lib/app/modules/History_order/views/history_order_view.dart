@@ -18,7 +18,6 @@ class HistoryOrderView extends GetView<HistoryOrderController> {
     return Scaffold(
       appBar: AppBarBasic(
         title: 'order'.tr,
-      
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -26,7 +25,7 @@ class HistoryOrderView extends GetView<HistoryOrderController> {
             Container(
               height: heightApp * 0.25,
               child: ListView.separated(
-                padding: EdgeInsetsDirectional.only(end: 40, top:10),
+                padding: EdgeInsetsDirectional.only(start: 0, top: 10),
                 shrinkWrap: true,
                 itemCount: 1,
                 separatorBuilder: (context, index) => const SizedBox(
@@ -46,7 +45,7 @@ class HistoryOrderView extends GetView<HistoryOrderController> {
             SizedBox(
               height: heightApp * 0.6,
               child: ListView.separated(
-                padding: EdgeInsetsDirectional.only(end: 40, top: 10),
+                padding: EdgeInsetsDirectional.only(top: 10),
                 shrinkWrap: true,
                 itemCount: 5,
                 separatorBuilder: (context, index) => const SizedBox(

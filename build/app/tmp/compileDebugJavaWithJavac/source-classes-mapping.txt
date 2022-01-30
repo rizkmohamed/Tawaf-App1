@@ -1,6 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-com/ibtikar/twaf/BuildConfig.java
- com.ibtikar.twaf.BuildConfig
-com/ibtikar/twaf/MainActivity.java
- com.ibtikar.twaf.MainActivity
