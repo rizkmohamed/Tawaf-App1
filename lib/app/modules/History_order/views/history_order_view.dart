@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:twaf/app/Shared/Colors/Colors.dart';
-import 'package:twaf/app/Shared/Style/Text_Style.dart';
 import 'package:twaf/app/Shared/Widget/appbar/appbar_basic.dart';
 import 'package:twaf/app/Shared/Widget/cards/current_umrah.dart';
 import 'package:twaf/app/Shared/Widget/cards/last_umrah.dart';

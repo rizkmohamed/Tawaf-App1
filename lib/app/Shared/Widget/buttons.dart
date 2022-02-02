@@ -4,7 +4,6 @@ import 'package:twaf/app/Shared/Colors/Colors.dart';
 import 'package:twaf/app/Shared/Style/Text_Style.dart';
 import 'package:twaf/app/Shared/constants.dart';
 
-
 class MainButton extends StatelessWidget {
   final String? text;
   final VoidCallback? press;
@@ -16,11 +15,13 @@ class MainButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(height: heightApp * 0.055,
+    return SizedBox(
+      height: heightApp * 0.055,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           primary: kgoldColor,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         ),
         onPressed: press,
         child: Center(

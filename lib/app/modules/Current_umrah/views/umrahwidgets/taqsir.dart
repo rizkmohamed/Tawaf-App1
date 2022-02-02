@@ -13,9 +13,9 @@ class Taqsir extends StatelessWidget {
     final CurrentUmrahController controller = Get.put(CurrentUmrahController());
   final String? timeText;
   final bool? ismorning;
-  final Widget? dot;
+  final Color? dotColor;
   
-  Taqsir({Key? key, this.timeText, this.ismorning, this.dot}) : super(key: key);
+  Taqsir({Key? key, this.timeText, this.ismorning, this.dotColor}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,14 @@ class Taqsir extends StatelessWidget {
         ),
         SizedBox(
           width: widthApp * 0.1,
-          child: dot,
+          child:  CircleAvatar( 
+                                radius: 12,
+                                backgroundColor: dotColor,
+                                child: CircleAvatar(
+                                  radius: 7,
+                                  backgroundColor: kwhite,
+                                ),
+                              ),
         ),
         SizedBox(width: widthApp * 0.15, child: UmrahTitleText(title: 'التقصير')),
        

@@ -7,12 +7,14 @@ import 'package:twaf/app/Shared/Style/Text_Style.dart';
 
 import 'package:twaf/app/Shared/Widget/buttons.dart';
 import 'package:twaf/app/Shared/constants.dart';
+import 'package:twaf/app/modules/Login/controllers/login_controller.dart';
 import 'package:twaf/app/routes/app_pages.dart';
 
 import '../controllers/register_controller.dart';
 import 'register_form.dart';
 
 class RegisterView extends GetView<RegisterController> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,27 +69,30 @@ class RegisterView extends GetView<RegisterController> {
                       },
                     ),
                     SizedBox(
-                      height: heightApp * 0.08,
+                      height: heightApp * 0.06,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text('Already have an account?'.tr,
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: kblack,
-                            )),
-                        InkWell(
-                          onTap: () {
-                            Get.toNamed(Routes.LOGIN);
-                          },
-                          child: Text('LogIn'.tr,
+                    Container(
+                      padding: EdgeInsets.only(bottom: heightApp * 0.04),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('Already have an account?'.tr,
                               style: TextStyle(
                                 fontSize: 16,
-                                color: kgoldColor,
+                                color: kblack,
                               )),
-                        )
-                      ],
+                          TextButton(
+                            onPressed: () {
+                              Get.toNamed(Routes.LOGIN);
+                            },
+                            child: Text('LogIn'.tr,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: kgoldColor,
+                                )),
+                          )
+                        ],
+                      ),
                     )
                   ]),
             ),

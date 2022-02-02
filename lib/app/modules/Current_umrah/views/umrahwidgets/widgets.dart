@@ -20,8 +20,10 @@ class CurrentUmrahSmallImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 2),
-      height: heightApp * 0.059,
-      width: widthApp * 0.118,
+      height:
+       heightApp * 0.059,
+      width:
+       widthApp * 0.118,
       child: InkWell(
         onTap: () {
           showDialog(

@@ -21,7 +21,7 @@ class ForgetPasswodView extends GetView<ForgetPasswodController> {
     return Scaffold(
       appBar: AppBarAuth(
         title1: 'FPassword?'.tr,
-        title2: 'Don not worry we are here to help you!'.tr,
+        title2: 'Don not worry we are here to help you!'.tr,isActiveback: true,
       ),
       body: SafeArea(
         child: DismissKeyboard(

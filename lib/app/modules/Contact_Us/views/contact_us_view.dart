@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:twaf/app/Shared/Colors/Colors.dart';
+
 import 'package:twaf/app/Shared/Dismiss_Keyboard.dart';
 import 'package:twaf/app/Shared/Style/Text_Style.dart';
 import 'package:twaf/app/Shared/Widget/BoxTextField.dart';
 import 'package:twaf/app/Shared/Widget/appbar/appbar_auth.dart';
-
 import 'package:twaf/app/Shared/Widget/boxMultiField.dart';
 import 'package:twaf/app/Shared/Widget/buttons.dart';
 import 'package:twaf/app/Shared/constants.dart';
-import 'package:twaf/app/routes/app_pages.dart';
+
 
 import '../controllers/contact_us_controller.dart';
 
@@ -19,8 +20,7 @@ class ContactUsView extends GetView<ContactUsController> {
     return Scaffold(
         appBar: AppBarAuth(
           title1: 'تواصل معنا'.tr,
-          title2: 'Don not worry we are here to help you!'.tr,
-          isActiveback: true,
+          title2: 'Don not worry we are here to help you!'.tr,isActiveback: true,
         ),
         body: SafeArea(
             child: DismissKeyboard(
@@ -96,7 +96,13 @@ class ContactUsView extends GetView<ContactUsController> {
               MainButton(
                 text: 'ارسال'.tr,
                 press: () {
-                  Get.toNamed(Routes.LOGIN);
+                   Get.snackbar(
+                    "شكرا لتواصلك",
+                    "تم ارسال طلبك",
+                    margin: EdgeInsets.only(bottom: 8, right: 8, left: 8),
+                    snackPosition: SnackPosition.BOTTOM,
+                    backgroundColor: kgoldColor,
+                  );
                 },
               ),
             ]),

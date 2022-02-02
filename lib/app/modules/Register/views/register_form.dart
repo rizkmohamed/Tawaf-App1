@@ -5,11 +5,13 @@ import 'package:twaf/app/Shared/Colors/Colors.dart';
 import 'package:twaf/app/Shared/Style/Text_Style.dart';
 import 'package:twaf/app/Shared/Widget/BoxTextField.dart';
 import 'package:twaf/app/Shared/constants.dart';
+import 'package:twaf/app/modules/Login/controllers/login_controller.dart';
 import 'package:twaf/app/modules/Register/controllers/register_controller.dart';
 import 'package:twaf/app/routes/app_pages.dart';
 
 class FormRegister extends StatelessWidget {
   final RegisterController controller = Get.put(RegisterController());
+   final LoginController _controller = Get.put(LoginController());
   FormRegister({
     Key? key,
   }) : super(key: key);

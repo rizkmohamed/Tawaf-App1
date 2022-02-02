@@ -4,15 +4,17 @@ import 'package:twaf/app/Shared/Colors/Colors.dart';
 import 'package:twaf/app/Shared/Style/Text_Style.dart';
 import 'package:twaf/app/Shared/constants.dart';
 import 'package:twaf/app/modules/Current_umrah/controllers/current_umrah_controller.dart';
+import 'package:twaf/app/modules/Current_umrah/views/current_umrah_view.dart';
 
+import 'ehram.dart';
 import 'widgets.dart';
 
 class Pray extends StatelessWidget {
   final CurrentUmrahController controller = Get.put(CurrentUmrahController());
   final String? timeText;
   final bool? ismorning;
-  final Widget? dot;
- Pray({Key? key, this.timeText, this.ismorning, this.dot}) : super(key: key);
+   final Color? dotColor;
+ Pray({Key? key, this.timeText, this.ismorning,  this.dotColor}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +39,14 @@ class Pray extends StatelessWidget {
         ),
         SizedBox(
           width: widthApp * 0.1,
-          child: dot,
+          child: CircleAvatar( 
+                                radius: 12,
+                                backgroundColor: dotColor,
+                                child: CircleAvatar(
+                                  radius: 7,
+                                  backgroundColor: kwhite,
+                                ),
+                              ),
         ),
         SizedBox(width: widthApp * 0.15, child: UmrahTitleText(title: 'الصلاة')),
        

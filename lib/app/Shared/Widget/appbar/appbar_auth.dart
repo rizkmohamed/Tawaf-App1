@@ -59,9 +59,9 @@ class AppBarAuth extends StatelessWidget implements PreferredSizeWidget {
             ),
           ),
         ),
-        Positioned(
+         PositionedDirectional(
           top: heightApp * 0.06,
-          right: widthApp * 0.02,
+          start: widthApp * 0.02,
           child: isActiveback == true
               ? IconButton(
                   onPressed: () {

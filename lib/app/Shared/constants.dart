@@ -2,6 +2,7 @@
 
 double heightApp = Get.height;
 double widthApp = Get.width;
+const KApiUrl = '';
 
 enum UmrahSteps {
   ehram,

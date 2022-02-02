@@ -4,10 +4,10 @@ import 'package:get/get.dart';
 import 'package:twaf/app/Shared/Colors/Colors.dart';
 import 'package:twaf/app/Shared/Style/Text_Style.dart';
 import 'package:twaf/app/Shared/Widget/appbar/appbar_basic.dart';
-
 import 'package:twaf/app/Shared/Widget/boxMultiField.dart';
 import 'package:twaf/app/Shared/Widget/buttons.dart';
 import 'package:twaf/app/Shared/constants.dart';
+import 'package:twaf/app/modules/home/views/home_view.dart';
 import 'package:twaf/app/routes/app_pages.dart';
 
 import '../controllers/rating_controller.dart';
@@ -102,7 +102,17 @@ class RatingView extends GetView<RatingController> {
             SizedBox(
               height: heightApp * 0.11,
             ),
-            MainButton(text: "Submit evaluation".tr, press: () {})
+            MainButton(
+                text: "Submit evaluation".tr,
+                press: () {
+                  Get.snackbar(
+                    "شكرا لك",
+                    "تم ارسال التقييم",
+                    margin: EdgeInsets.only(bottom: 8, right: 8, left: 8),
+                    snackPosition: SnackPosition.BOTTOM,
+                    backgroundColor: kgoldColor,
+                  );
+                })
           ],
         ),
       ),

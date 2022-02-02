@@ -9,7 +9,7 @@ import 'package:twaf/app/Shared/constants.dart';
 import 'package:twaf/app/lang/lang_controller.dart';
 import 'package:twaf/app/modules/About/views/about_view.dart';
 import 'package:twaf/app/modules/About_umrah/views/about_umrah_view.dart';
-import 'package:twaf/app/modules/FAQ/views/faq_view.dart';
+
 import 'package:twaf/app/modules/Success_Partners/controllers/success_partners_controller.dart';
 import 'package:twaf/app/modules/Success_Partners/views/success_partners_view.dart';
 import 'package:twaf/app/modules/Terms_and_conditons/views/terms_and_conditons_view.dart';
@@ -49,7 +49,7 @@ class SettingView extends GetView<SettingController> {
                         onPressed: () {
                           lang.changeLanguage('ar');
                           Get.updateLocale(Locale('ar'));
-                          Get.toNamed(Routes.HOME);
+                        Get.back();
                         }),
                     BottomSheetAction(
                         title: Text(
@@ -60,7 +60,7 @@ class SettingView extends GetView<SettingController> {
                         onPressed: () {
                           lang.changeLanguage('en');
                           Get.updateLocale(Locale('en'));
-                          Get.toNamed(Routes.HOME);
+                         Get.back();
                         }),
                     BottomSheetAction(
                         title: Text(
@@ -71,7 +71,7 @@ class SettingView extends GetView<SettingController> {
                         onPressed: () {
                           lang.changeLanguage('fr');
                           Get.updateLocale(Locale('fr'));
-                          Get.toNamed(Routes.HOME);
+                          Get.back();
                         }),
                     BottomSheetAction(
                         title: Text(
@@ -82,7 +82,7 @@ class SettingView extends GetView<SettingController> {
                         onPressed: () {
                           lang.changeLanguage('ur');
                           Get.updateLocale(Locale('ur'));
-                          Get.toNamed(Routes.HOME);
+                         Get.back();
                         }),
                   ],
                   cancelAction: CancelAction(

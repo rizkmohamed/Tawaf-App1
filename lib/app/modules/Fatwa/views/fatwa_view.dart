@@ -28,7 +28,7 @@ class FatwaView extends GetView<FatwaController> {
                 children: <Widget>[
                   // the tab bar with two items
                   SizedBox(
-                    height: heightApp * 0.065,
+                    height: heightApp * 0.055,
                     child: AppBar(
                       elevation: 0,
                       shape: RoundedRectangleBorder(

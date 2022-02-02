@@ -134,6 +134,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "http",
+      "rootUri": "file:///Users/ibtikarsoft/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///Users/ibtikarsoft/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///Users/ibtikarsoft/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/lints-1.0.1",
       "packageUri": "lib/",
@@ -332,7 +344,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2022-02-02T10:32:58.377759Z",
+  "generated": "2022-02-02T11:08:29.470189Z",
   "generator": "pub",
   "generatorVersion": "2.15.1"
 }

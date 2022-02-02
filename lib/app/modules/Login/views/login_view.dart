@@ -3,17 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:twaf/app/Shared/Colors/Colors.dart';
 import 'package:twaf/app/Shared/Dismiss_Keyboard.dart';
-import 'package:twaf/app/Shared/Style/Text_Style.dart';
-import 'package:twaf/app/Shared/Widget/BoxTextField.dart';
+
 import 'package:twaf/app/Shared/Widget/appbar/appbar_auth.dart';
 import 'package:twaf/app/Shared/Widget/buttons.dart';
 import 'package:twaf/app/Shared/constants.dart';
 import 'package:twaf/app/modules/Login/views/login_form.dart';
+import 'package:twaf/app/modules/Register/controllers/register_controller.dart';
 import 'package:twaf/app/routes/app_pages.dart';
 
 import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
+    final RegisterController _controller = Get.put(RegisterController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,8 +32,8 @@ class LoginView extends GetView<LoginController> {
               MainButton(
                 text: 'LogIn'.tr,
                 press: () {
-                  Get.toNamed(Routes.LOGIN);
                   controller.checkLogin();
+                  Get.toNamed(Routes.HOME);
                 },
               ),
               SizedBox(
@@ -52,7 +53,7 @@ class LoginView extends GetView<LoginController> {
                   ),
                   TextButton(
                     onPressed: () {
-                      Get.back();
+                      Get.toNamed(Routes.REGISTER);
                     },
                     child: Text('Create account'.tr,
                         style: TextStyle(

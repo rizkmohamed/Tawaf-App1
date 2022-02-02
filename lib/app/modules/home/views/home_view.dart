@@ -109,7 +109,7 @@ class HomeBody extends StatelessWidget {
               pagination: const SwiperPagination(),
               // control: const SwiperControl(),
               itemCount: _controller.images.length,
-              itemWidth: 250,
+              itemWidth:widthApp * 0.7,
               itemHeight: heightApp * 0.55,
               layout: SwiperLayout.STACK,
             ),

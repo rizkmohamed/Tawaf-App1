@@ -1,7 +1,5 @@
 import 'package:adaptive_action_sheet/adaptive_action_sheet.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'dart:ui';
 import 'package:get/get.dart';
 import 'package:twaf/app/Shared/Colors/Colors.dart';
 import 'package:twaf/app/Shared/Style/Text_Style.dart';
@@ -10,10 +8,8 @@ import 'package:twaf/app/Shared/Widget/appbar/appbar_basic.dart';
 import 'package:twaf/app/Shared/Widget/boxMultiField.dart';
 import 'package:twaf/app/Shared/Widget/buttons.dart';
 import 'package:twaf/app/Shared/Widget/cards/requesr_umrah.dart';
-import 'package:twaf/app/Shared/Widget/grey_box.dart';
 import 'package:twaf/app/Shared/constants.dart';
 import 'package:twaf/app/routes/app_pages.dart';
-
 import '../controllers/requset_umrah_controller.dart';
 
 class RequsetUmrahView extends GetView<RequsetUmrahController> {
@@ -106,7 +102,8 @@ class RequsetUmrahView extends GetView<RequsetUmrahController> {
                                   controller.sexm.value;
                                 }),
                           ],
-                          cancelAction: CancelAction(title: Text('cancel'.tr)),
+                          cancelAction:
+                              CancelAction(title: Text('cancel'.tr)),
                         );
                       },
                       child: Row(

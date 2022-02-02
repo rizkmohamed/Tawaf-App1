@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:twaf/app/Shared/Colors/Colors.dart';
 import 'package:twaf/app/Shared/Style/Text_Style.dart';
 import 'package:twaf/app/Shared/Widget/appbar/appbar_basic.dart';
-
 import 'package:twaf/app/Shared/Widget/buttons.dart';
 import 'package:twaf/app/Shared/Widget/cards/requesr_umrah.dart';
 import 'package:twaf/app/Shared/Widget/grey_box.dart';
@@ -25,7 +24,7 @@ class RequsetDetailsUmrahView extends GetView<RequsetDetailsUmrahController> {
        isActiveback: true,
       ),
       body: Padding(
-        padding: EdgeInsets.only(right: 16, left: 16),
+        padding: EdgeInsets.only(right: 15, left: 15),
         child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,

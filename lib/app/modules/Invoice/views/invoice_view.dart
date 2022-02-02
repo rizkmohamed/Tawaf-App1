@@ -28,129 +28,139 @@ class InvoiceView extends GetView<InvoiceController> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Umrah price".tr,
-                    style: kGray_16b,
-                  ),
-                  Text(
-                    "500ريال",
-                    style: kGray_16r,
-                  )
-                ],
-              ),
-              SizedBox(
-                height: heightApp * 0.02,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Value Added".tr,
-                    style: kGray_16b,
-                  ),
-                  Text(
-                    "075ريال",
-                    style: kGray_16r,
-                  )
-                ],
-              ),
-              SizedBox(
-                height: heightApp * 0.02,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "coupon code".tr,
-                    style: kGray_16b,
-                  ),
-                  SizedBox(
-                    width: widthApp * 0.33,
-                  ),
-                  Expanded(
-                    child: FormField(
-                      builder: (FormFieldState state) {
-                        return SizedBox(
-                          height: 33,
-                          // child:
-
-                          //  Padding(
-                          //   padding: const EdgeInsets.only(
-                          //       right: 99,),
-                          child: TextFormField(
-                            keyboardType: TextInputType.text,
-                            decoration: InputDecoration(
-                              errorStyle: TextStyle(
-                                color: Colors.red,
-                                fontSize: 12.0,
-                              ),
-                              fillColor: Colors.white,
-                              filled: true,
-                              contentPadding: EdgeInsets.all(5),
-                              // border: OutlineInputBorder(
-                              //   borderRadius: BorderRadius.circular(12),
-                              //   borderSide: BorderSide(
-                              //     color: Colors.grey,
-                              //     style: BorderStyle.solid,
-                              //     width: 1,
-                              //   ),
-                              // ),
-                              enabledBorder: OutlineInputBorder(
-                                borderSide: const BorderSide(color: kgary),
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderSide: const BorderSide(color: kgary),
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                              focusedErrorBorder: OutlineInputBorder(
-                                borderSide: const BorderSide(color: kgary),
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                              errorBorder: OutlineInputBorder(
-                                borderSide: const BorderSide(color: Colors.red),
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                            ),
-                          ),
-                        );
-                      },
+              Expanded(
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Umrah price".tr,
+                          style: kGray_16b,
+                        ),
+                        Text(
+                          "500ريال",
+                          style: kGray_16r,
+                        )
+                      ],
                     ),
-                  ),
-                ],
-              ),
-              const Divider(
-                thickness: 01.0,
-                color: kdarkgray,
-              ),
-              SizedBox(
-                height: heightApp * 0.01,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Umrah price".tr,
-                    style: kGold_18extra,
-                  ),
-                  Text(
-                    "500ريال",
-                    style: kGold_18extra,
-                  )
-                ],
-              ),
-              SizedBox(
-                height: heightApp * 0.01,
-              ),
-              const Divider(
-                thickness: 01.0,
-                color: kdarkgray,
-              ),
-              SizedBox(
-                height: heightApp * 0.60,
+                    SizedBox(
+                      height: heightApp * 0.02,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Value Added".tr,
+                          style: kGray_16b,
+                        ),
+                        Text(
+                          "075ريال",
+                          style: kGray_16r,
+                        )
+                      ],
+                    ),
+                    SizedBox(
+                      height: heightApp * 0.02,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "coupon code".tr,
+                          style: kGray_16b,
+                        ),
+                        SizedBox(
+                          width: widthApp * 0.33,
+                        ),
+                        Expanded(
+                          child: FormField(
+                            builder: (FormFieldState state) {
+                              return SizedBox(
+                                height: 33,
+                                // child:
+
+                                //  Padding(
+                                //   padding: const EdgeInsets.only(
+                                //       right: 99,),
+                                child: TextFormField(
+                                  keyboardType: TextInputType.text,
+                                  decoration: InputDecoration(
+                                    errorStyle: TextStyle(
+                                      color: Colors.red,
+                                      fontSize: 12.0,
+                                    ),
+                                    fillColor: Colors.white,
+                                    filled: true,
+                                    contentPadding: EdgeInsets.all(5),
+                                    // border: OutlineInputBorder(
+                                    //   borderRadius: BorderRadius.circular(12),
+                                    //   borderSide: BorderSide(
+                                    //     color: Colors.grey,
+                                    //     style: BorderStyle.solid,
+                                    //     width: 1,
+                                    //   ),
+                                    // ),
+                                    enabledBorder: OutlineInputBorder(
+                                      borderSide:
+                                          const BorderSide(color: kgary),
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    focusedBorder: OutlineInputBorder(
+                                      borderSide:
+                                          const BorderSide(color: kgary),
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    focusedErrorBorder: OutlineInputBorder(
+                                      borderSide:
+                                          const BorderSide(color: kgary),
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    errorBorder: OutlineInputBorder(
+                                      borderSide:
+                                          const BorderSide(color: Colors.red),
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                    const Divider(
+                      thickness: 01.0,
+                      color: kdarkgray,
+                    ),
+                    SizedBox(
+                      height: heightApp * 0.01,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Umrah price".tr,
+                          style: kGold_18extra,
+                        ),
+                        Text(
+                          "500ريال",
+                          style: kGold_18extra,
+                        )
+                      ],
+                    ),
+                    SizedBox(
+                      height: heightApp * 0.01,
+                    ),
+                    const Divider(
+                      thickness: 01.0,
+                      color: kdarkgray,
+                    ),
+                     SizedBox(
+                      height: heightApp * 0.02,
+                    ),
+                  ],
+                ),
               ),
               MainButton(
                   text: "Choose your payment method and continue".tr,
@@ -184,7 +194,10 @@ class InvoiceView extends GetView<InvoiceController> {
                           title: Text('cancel'
                               .tr)), // onPressed parameter is optional by default will dismiss the ActionSheet
                     );
-                  })
+                  }),
+              SizedBox(
+                height: heightApp * 0.02,
+              ),
             ]),
       ),
     );
